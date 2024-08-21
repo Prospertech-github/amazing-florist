@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px; 
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+
+/* NAVIGATION STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+}
+nav > ul{
+    display: flex;
+    gap: 10rem;
+}
+nav ul li a{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: green;
+    padding: 1.5rem;
+    /* transition: all .5s ease-out; */
+}
+nav ul li a:hover{
+    transform: scale(1.5);
+}
+
+/* HERO SECTION STYLING */
+.hero{
+    height: calc(100vh - 15rem);
+    background-image: url("./images/heroBg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* background: url("./images/heroBg.jpeg") center center/cover no-repeat; */
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0,0,0,0.5); */
+    background: rgb(0,0,0);
+    opacity: .4;
+}
+.headlineTexts{
+    color: #fffcfc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headlineTexts h1{
+    font-size: 7rem;
+    font-weight: 600;
+}
+.headlineTexts p{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.special{
+    color: green;
+}
+p#topPara{
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+.btn{
+    background-color: green;
+    color: #fffcfc;
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+/* About Section Styling */
+.about{
+    display: flex;
+    gap: 8rem;
+    padding: 4rem 6rem;
+    background-color: #ffb000;
+}
+.about .imgCtn{
+    width: 40rem;
+    align-self: center;
+}
+
+.textCtn{
+    flex: 1;
+}
+.textCtn h2{
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: green;
+    text-align: center;
+    border-bottom: 2px solid #222;
+}
+.textCtn p{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin: 3rem 0;
+}
+dl{
+    font-size: 2.3rem;
+}
+dt{
+    margin-top: 1rem;
+}
+dd{
+    color: green;
+    margin-left: 3rem;
+}
+
+/* Footer styling */
+footer{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem;
+}
